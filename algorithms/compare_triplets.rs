@@ -12,8 +12,8 @@ use std::io::{self, BufRead, Write};
  */
 //alice score first, bobs score second
 fn compareTriplets(a: &[i32], b: &[i32]) -> Vec<i32> {
-    let mut out: Vec<i32> = Vec::new();
-    for n in 0..b.len {
+    let mut out: Vec<i32> = vec![0, 0];
+    for n in 0..b.len() {
         if a[n] > b[n] {
             out[0] += 1;
         } else if b[n] > a[n] {
