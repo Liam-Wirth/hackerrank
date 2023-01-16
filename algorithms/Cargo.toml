@@ -7,4 +7,7 @@ edition = "2021"
 [[bin]]
 name = "simple-array-sum"
 path = "simple-array-sum.rs"
+[[bin]]
+name = "compare_triplets"
+path = "compare_triplets.rs"
 [dependencies]
